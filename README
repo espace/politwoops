@@ -8,3 +8,6 @@
 
 * Create a CSV where the second column is the Twitter ID or URL, the fifth column is the party, and the sixth column is the "group" (which can be "default").
 * Run "rake csv:import CSV=[filename]" to import this CSV. Add "CSV_SEP=," if you need it to use a separator other than the semicolon.
+
+
+...
