@@ -2,6 +2,13 @@
 <%= t :list_politicians, :scope => [:politwoops,:admin] %>
 <% end %>
 
+<% if flash[:success_message] %>
+  <div class="admin_error info">
+    <%= flash[:success_message] %>
+  </div>
+<% end %>
+<br/>
+
 <h2><%= t :list_politicians, :scope => [:politwoops,:admin] %> (<%= @politicians.size %>)</h2>
 <p>يقوم محرك أد كلمتك بمتابعة حسابات هذه الشخصيات العامة والنخبة على تويتر، يمكنك إقتراح شخصية جديدة لمتابعة تغريداتها المحذوفة عن طريق الضغط على <a href="/users/suggest"><%= t('politwoops.groups.suggest_politicians_label')%></a></p>
 <ul>

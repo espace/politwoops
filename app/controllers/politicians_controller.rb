@@ -105,7 +105,7 @@ class PoliticiansController < ApplicationController
     if @politician.valid? and !name.empty? and (email =~ /@/)
       flash[:success_message] = t(:suggestion_added, :scope =>[:politwoops, :success])
       UserMailer.suggest_politician(@politician, name, email).deliver
-      redirect_to("/")
+      redirect_to("/users/list")
     elsif @politician.valid?
       @user_error = t(:user_error, :scope =>[:politwoops, :error])
       @parties = Party.all
