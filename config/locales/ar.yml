@@ -184,6 +184,10 @@ ar:
         title: ""
         no_result: "ﻻ ﺗﻮﺟﺪ ﻧﺘﺎﺋﺞ ﻟﻠﺒﺤﺚ"
         site_name: "ﺃﺩ ﻛﻠﻤﺘﻚ"
+        
+        follow:
+              facebook: "تابعنا على الفيسبوك"
+              twitter: "تابعنا على تويتر"
         form:
             filter: "ﺑﺤﺚ"
             search: "ﺑﺤﺚ"
