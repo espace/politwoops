@@ -254,7 +254,9 @@ ar:
         error:
             no_such_user: "لايوجد شخصية عامة بهذا الأسم علي تويتر"
             user_error: "لابد من ادخال الأسم والبريد الألكتروني"
-
+        success:
+            suggestion_added: "لقد تم إرسال اقتراحك بنجاح سنقوم بإضافته بعد مراجعته من مسؤول الموقع أولا"
+            
         contact_menu:
             more_information: "عن أد كلمتك"
             contact_us: "اﺗﺼﻞ ﺑﻨﺎ"

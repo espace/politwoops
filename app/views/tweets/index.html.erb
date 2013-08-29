@@ -23,6 +23,13 @@
   <% end %>
 <% end %>
 
+<% if flash[:success_message] %>
+  <div class="admin_error info">
+    <%= flash[:success_message] %>
+  </div>
+<% end %>
+<br/>
+
 <% if @tweets.empty? %>
   <div class="no-result">
     <%= t 'politwoops.no_result' %>
