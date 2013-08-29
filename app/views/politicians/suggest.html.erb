@@ -1,4 +1,8 @@
-<h2><%= t :suggest_new_politician, :scope => [:politwoops,:admin] %></h2  >
+<% content_for :title do %>
+<%= t :suggest_new_politician, :scope => [:politwoops,:admin] %>
+<% end %>
+
+<h2><%= t :suggest_new_politician, :scope => [:politwoops,:admin] %></h2>
 
 <form id="politician" action="/users/send_suggestion" method="POST" class="form-style">
   <% if !@politician.nil? && @politician.errors.any? %>

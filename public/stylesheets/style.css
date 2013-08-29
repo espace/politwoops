@@ -610,7 +610,8 @@ h4.tweetTitle{
 
 .info {
   background:none repeat scroll 0 0 #EBFFEE;
-  border:1px solid #BBE6B0;  
+  border:1px solid #BBE6B0;
+  padding: 10px;  
 }
 
 .error {

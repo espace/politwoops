@@ -23,15 +23,16 @@
   <% end %>
 <% end %>
 
-<% if @tweets.empty? %>
-  <div class="no-result">
-    <%= t 'politwoops.no_result' %>
-    <!--<a href="/users/suggest"><%= t('politwoops.groups.suggest_politicians_label')%></a>-->
+<% if flash[:success_message] %>
+  <div class="admin_error info">
+    <%= flash[:success_message] %>
   </div>
-<% else %>
+<% end %>
+<br/>
+
   
   <h2 class="tweets_count">
-    <%= t(:number_of_deleted_tweets, :scope => [:politwoops,:tweets]) %> <span><%= @tweets.total_entries %></span>
+    <%= t(:deleted_tweets, :scope => [:politwoops,:tweets]) %>
   </h2>
   
   <div class="filter">
@@ -50,7 +51,16 @@
     <button style="display: inline-block;" type="submit"><%=t(:search, :scope => [:politwoops,:form])%></button>
     </form>
   </div>
-    
+<% if @tweets.empty? %>
+  <div class="no-result">
+    <%= t 'politwoops.no_result' %>
+    <!--<a href="/users/suggest"><%= t('politwoops.groups.suggest_politicians_label')%></a>-->
+  </div>
+<% else %>
+  <h3 class="tweets_count">
+    <%= t(:number_of_deleted_tweets, :scope => [:politwoops,:tweets]) %> <span><%= @tweets.total_entries %></span>
+  </h3>
+  
   <% @tweets.each do |tweet| %>
     <%= render :partial => "tweets/tweet", :locals => {:tweet => tweet} %>
   <% end %>

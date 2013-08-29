@@ -184,6 +184,10 @@ ar:
         title: ""
         no_result: "ﻻ ﺗﻮﺟﺪ ﻧﺘﺎﺋﺞ ﻟﻠﺒﺤﺚ"
         site_name: "ﺃﺩ ﻛﻠﻤﺘﻚ"
+        
+        follow:
+              facebook: "تابعنا على الفيسبوك"
+              twitter: "تابعنا على تويتر"
         form:
             filter: "ﺑﺤﺚ"
             search: "ﺑﺤﺚ"
@@ -254,7 +258,9 @@ ar:
         error:
             no_such_user: "لايوجد شخصية عامة بهذا الأسم علي تويتر"
             user_error: "لابد من ادخال الأسم والبريد الألكتروني"
-
+        success:
+            suggestion_added: "لقد تم إرسال اقتراحك بنجاح سنقوم بإضافته بعد مراجعته من مسؤول الموقع أولا"
+            
         contact_menu:
             more_information: "عن أد كلمتك"
             contact_us: "اﺗﺼﻞ ﺑﻨﺎ"
@@ -368,7 +374,8 @@ ar:
             byline_text: "ﺣﺬﻓﺖ ﻣﻨﺬ %{when}، %{delay}"
             immediately: "ﻋﻠﻲ اﻟﻔﻮﺭ"
             screenshots_of_links_in_this_tweet: "ﺻﻮﺓ ﻣﻦ اﻟﺼﻔﺤﺔ اﻟﻤﺸﺎﺭ ﺇﻟﻴﻬﺎ ﻓﻲ اﻟﺘﻐﺮﻳﺪﺓ"
-            number_of_deleted_tweets: "ﻋﺪﺩ اﻟﺘﻐﺮﻳﺪاﺕ اﻟﻤﺤﺬﻭﻓﺔ"
+            number_of_deleted_tweets: "ﻋﺪﺩ اﻟﺘﻐﺮﻳﺪاﺕ "
+            deleted_tweets: "اﻟﺘﻐﺮﻳﺪاﺕ اﻟﻤﺤﺬﻭﻓﺔ"
             no_deleted_tweets: "لا يوجد تغريدات محذوفة لهذة الشخصية"
             after: "ﺑﻌﺪ"
             from_publishing_it: "ﻣﻦ ﻧﺸﺮﻫﺎ"
