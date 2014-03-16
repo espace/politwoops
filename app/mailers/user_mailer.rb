@@ -11,5 +11,13 @@ class UserMailer < ActionMailer::Base
   	
   	mail(:to => "info@kelmetak.com", :subject => "Politician suggestion from #{name}")
   end
+  def contact_us(name, email, comment)
+  	@name = name
+  	@email = email
+
+  	@comment = comment
+  	
+  	mail(:to => "info@kelmetak.com", :subject => "contact from #{name}")
+  end
 
 end

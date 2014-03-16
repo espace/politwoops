@@ -1,0 +1,17 @@
+<h2><%= t :contact_us, :scope => [:politwoops,:contact_menu] %></h2  >
+<form id="contact_us" action="/users/contact_us" method="POST" class="form-style">
+ <div>
+  <label for="name"><%= t :name , :scope => [:politwoops,:admin] %>:</label>
+  <input id="name"  name="name" value="" />
+</div>
+<div>
+  <label for="email"><%= t :email , :scope => [:politwoops,:admin]%>:</label>
+  <input id="email" name="email" value="" />
+</div>
+<br><br>
+<div>
+  <label for="comment"><%= t :comment , :scope => [:politwoops,:admin]%>:</label>
+  <textarea id="comment" name="comment" rows="10" cols="50" ></textarea>
+</div>
+     <button type="submit" value="suggest"><%= t :send, :scope => [:politwoops,:form] %></button>
+</form>

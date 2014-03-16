@@ -9,6 +9,7 @@ Politwoops::Application.routes.draw do
   match "users/list" => "politicians#index", :as => :all_politicians
   match "users/suggest" => "politicians#suggest", :as => :suggest
   match "users/send_suggestion" => "politicians#send_suggestion", :as => :send_suggestion
+  match "users/contact_us" => "static#send_contact_us", :as => :contact_us
   match "users/get-twitter-id/:screen_name" => "politicians#get_twitter_id", :as => "get_twitter_id"
   match "party/:name" => "parties#show", :as => :party
   match "tweets/shorten_url" => "tweets#shorten_url"
@@ -53,6 +54,8 @@ Politwoops::Application.routes.draw do
   
   
   match "about", :to=> "static#about"
+  match "privacy", :to=> "static#privacy"
+  match "contact_us", :to=> "static#contact_us"
   match "404", :to => "errors#not_found"    
   match "*anything", :to => "errors#not_found"
 
