@@ -16,11 +16,19 @@ class StaticController < ApplicationController
     name = params[:name]
     email = params[:email]
 		comment = params[:comment]
+    
     if  !name.empty? and !comment.empty? and (email =~ /@/)
-      UserMailer.contact_us(name, email, comment).deliver
-      redirect_to("/")
+			if !verify_solvemedia_puzzle 
+	 		  @user_error = t(:captcha_error, :scope =>[:politwoops, :error])
+		    render 'contact_us'
+			else
+  			UserMailer.contact_us(name, email, comment).deliver
+     		redirect_to("/")
+   		end
+    
     else
-      redirect_to("/")
+      @user_error = t(:contact_us_error, :scope =>[:politwoops, :error])
+      render 'contact_us'
     end
 
   end

@@ -273,7 +273,8 @@ ar:
         error:
             no_such_user: "لايوجد شخصية عامة بهذا الأسم علي تويتر"
             user_error: "لابد من ادخال الأسم والبريد الألكتروني"
-
+            contact_us_error: "لابد من ادخال الأسم والبريد الألكتروني والتعليق"
+            captcha_error: "الإجابة التي أدخلتها غير صحيحة"
         contact_menu:
             more_information: "عن أد كلمتك"
             contact_us: "اﺗﺼﻞ ﺑﻨﺎ"

@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'mysql2', '0.3.11'
-
+gem 'solvemedia'
 gem 'httparty' # used for syncing Twitter avatars
 
 # interacting with Twitter
@@ -15,7 +15,7 @@ gem 'twitter-text' # parsing hashtags and usernames
 gem "will_paginate", "~> 3.0.pre2" # pagination
 gem "rails_autolink" # auto_link function
 
-gem "system_timer", "~> 1.2.4"
+#gem "system_timer", "~> 1.2.4"
 
 gem 'newrelic_rpm'
 

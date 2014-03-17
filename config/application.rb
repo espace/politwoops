@@ -25,7 +25,9 @@ module Politwoops
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
-    
+    config.solvemedia.ckey = "iyqlrhKBTqrUan-DGodR1WQxbWPtDTI1"
+		config.solvemedia.vkey = "IT6IYPn3vcOWHBPKVUNDk8BLryhDhgNj"
+		config.solvemedia.hkey = "lGQ5-zA3qbBggCZFc.bEKuaZxVN-xSUz"
     config.time_zone = 'Africa/Cairo'
     #config.active_record.default_timezone = 'Africa/Cairo'
     config.active_record.default_timezone = :local
