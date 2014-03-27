@@ -8,7 +8,9 @@ class StaticController < ApplicationController
   def privacy
     render "static/privacy"
   end
-  
+  def blog
+    render "static/blog"
+  end
 	def contact_us
     render "static/contact_us"
   end

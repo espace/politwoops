@@ -55,6 +55,7 @@ Politwoops::Application.routes.draw do
   
   match "about", :to=> "static#about"
   match "privacy", :to=> "static#privacy"
+  match "blog", :to=> "static#blog"
   match "contact_us", :to=> "static#contact_us"
   match "404", :to => "errors#not_found"    
   match "*anything", :to => "errors#not_found"
