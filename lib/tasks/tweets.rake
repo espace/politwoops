@@ -9,8 +9,8 @@ namespace :tweets do
     tweets_count=0
 
     Politician.with_auto_publish.active.each do |politician|
-      tweets_count +=politician.deleted_tweets.waiting_review.update_all("reviewed = 1, approved = 1, reviewed_at = '#{Time.now}', reviewed_by_id = 0", 
-                              "(modified - created) > #{Admin::SysSetting.auto_publish_delay_seconds}")
+      tweets_count +=politician.deleted_tweets.waiting_review.update_all("reviewed = 1, approved = 1, reviewed_at = '#{Time.now}', reviewed_by_id = 0")
+                              #"(modified - created) > #{Admin::SysSetting.auto_publish_delay_seconds}")
       print '#'
     end
     puts "published #{tweets_count} tweets of #{pcount} politicians"
